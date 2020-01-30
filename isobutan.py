@@ -1,3 +1,10 @@
+"""
+a combination of the
+ - ideal gas law and
+ - a simple chemical reaction
+
+But still, no warranty.
+"""
 # %% constants
 AVOGARDRO = 6.02214076 * 10 ** 23  # 1/mol
 BOLTZMANN = 1.380649 * 10 ** -23  # J/K or Nm/K or (kgm^2)/(Ks^2)
