@@ -1,5 +1,5 @@
 import unittest
-from isobutan import *
+from isobutane import *
 
 
 class TestMethods(unittest.TestCase):
@@ -30,7 +30,7 @@ class TestMethods(unittest.TestCase):
 
     def test_oxygen_needed_for_isobutan(self):
         self.assertAlmostEqual(
-            oxygen_needed_for_isobutan(1),
+            oxygen_needed_for_isobutane(1),
             6.5
         )
 
@@ -42,19 +42,19 @@ class TestMethods(unittest.TestCase):
 
     def test_isobutan_vol_to_air_vol(self):
         self.assertAlmostEqual(
-            isobutan_vol_to_air_vol(.1),
+            isobutane_vol_to_air_vol(.1),
             3.095238095
         )
 
     def test_air_vol_to_isobutan_vol(self):
         self.assertAlmostEqual(
-            air_vol_to_isobutan_vol(3.095238095),
+            air_vol_to_isobutane_vol(3.095238095),
             .1
         )
 
     def test_air_volume_for_isobutan_mols(self):
         self.assertAlmostEqual(
-            air_volume_for_isobutan_mols(1.422559853501),
+            air_volume_for_isobutane_mols(1.422559853501),
             1.0
         )
 
