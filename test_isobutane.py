@@ -34,9 +34,9 @@ class TestMethods(unittest.TestCase):
             6.5
         )
 
-    def test_isobutan_needed_for_oxygen(self):
+    def test_isobutane_needed_for_oxygen(self):
         self.assertAlmostEqual(
-            isobutan_needed_for_oxygen(6.5),
+            isobutane_needed_for_oxygen(6.5),
             1
         )
 

@@ -61,7 +61,7 @@ def oxygen_needed_for_isobutane(mols):
     return mols * OXYGEN_TO_ISOBUTANE_RATIO
 
 
-def isobutan_needed_for_oxygen(mols):
+def isobutane_needed_for_oxygen(mols):
     return mols / OXYGEN_TO_ISOBUTANE_RATIO
 
 
@@ -73,17 +73,17 @@ def air_volume_for_isobutane_mols(mols):
     return air_volume
 
 
-def isobutane_vol_to_air_vol(volume_isobutan):
+def isobutane_vol_to_air_vol(volume_isobutane):
     """returns cubic meters m^3"""
-    mols_isobutan = calc_volume_to_mol(volume_isobutan)
-    return air_volume_for_isobutane_mols(mols_isobutan)
+    mols_isobutane = calc_volume_to_mol(volume_isobutane)
+    return air_volume_for_isobutane_mols(mols_isobutane)
      
 
 def air_vol_to_isobutane_vol(volume_air):
     """returns cubic meters m^3"""
     volume_oxygen = get_oxygen_volume_of_air(volume_air)
     mols_oxygen = calc_volume_to_mol(volume_oxygen)
-    mols_isobutane = isobutan_needed_for_oxygen(mols_oxygen)
+    mols_isobutane = isobutane_needed_for_oxygen(mols_oxygen)
     return calc_mol_to_volume(mols_isobutane)
     
 
@@ -92,14 +92,14 @@ def print_needed_air(isobutane_volume):
     print(
         f'{isobutane_vol_to_air_vol(isobutane_volume) * 1000:.3f} liters of air'
         f' are needed for a stoichiometric reaction of'
-        f' {isobutane_volume * 1000:.3f} liters of isobutan'
+        f' {isobutane_volume * 1000:.3f} liters of isobutane'
     )
 
 
 def print_needed_isobutane(air_volume):
     """does not account for container volume"""
     print(
-        f'{air_vol_to_isobutane_vol(air_volume) * 1000:.3f} liters of isobutan'
+        f'{air_vol_to_isobutane_vol(air_volume) * 1000:.3f} liters of isobutane'
         f' are needed for a stoichiometric reaction of' 
         f' {air_volume * 1000:.3f} liters of air'
     )
