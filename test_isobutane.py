@@ -58,6 +58,15 @@ class TestMethods(unittest.TestCase):
             1.0
         )
 
+    def test_print_needed_air(self):
+        print_needed_air(0.1)
+
+    def test_print_needed_isobutane(self):
+        print_needed_isobutane(0.1)
+
+    def test_main(self):
+        main()
+
 
 if __name__ == '__main__':
     unittest.main()

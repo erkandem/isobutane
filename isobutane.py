@@ -105,8 +105,12 @@ def print_needed_isobutane(air_volume):
     )
 
 
-if __name__ == '__main__':
+def main():
     ISOBUTANE_VOLUME = 0.1 / 1000  # m^3
     AIR_VOLUME = 3.095 / 1000  # m^3
     print_needed_air(ISOBUTANE_VOLUME)
     print_needed_isobutane(AIR_VOLUME)
+
+
+if __name__ == '__main__':
+    main()
