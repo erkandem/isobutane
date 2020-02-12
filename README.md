@@ -1,3 +1,5 @@
+[![Run on Repl.it](https://repl.it/badge/github/erkandem/isobutane)](https://repl.it/github/erkandem/isobutane)
+
 ### the case
 I needed a quick answer, solved the equations and thought that it 
 would be a waste of energy to recalculate it ever again.
